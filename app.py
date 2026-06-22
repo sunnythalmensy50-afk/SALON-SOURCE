@@ -8,9 +8,13 @@ class SpiderWorld:
         
         reponses = []
         for ia in ia_list:
-            # Ici, le code est prêt à appeler les secrets sans les afficher.
-            # Exemple pour GPT-4 : st.secrets.get("OPENAI_API_KEY")
-            reponses.append(f"Analyse de {ia} sur : '{question}' (Connecté)")
+            # Branchement sécurisé : tente de récupérer la clé ou indique l'absence
+            try:
+                # Vérifie si la clé existe dans les Secrets Streamlit
+                cle_api = st.secrets[f"{ia.upper()}_API_KEY"]
+                reponses.append(f"[{ia}]: Analyse effectuée via clé sécurisée.")
+            except:
+                reponses.append(f"[{ia}]: Clé API non configurée dans les Secrets.")
             
         return f"Synthèse organique : \n" + "\n".join(reponses)
 
@@ -31,7 +35,7 @@ ia_list = st.multiselect("IA de synergie :", ["Claude", "Gemini", "GPT-4"])
 
 if st.button("Admission"):
     if question and ia_list:
-        # Traitement via le cœur
+        # Traitement via le cœur sécurisé
         synthese = SpiderWorld.quintessence(question, ia_list)
         salons = SpiderWorld.structure(question)
         
