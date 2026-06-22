@@ -1,31 +1,44 @@
-class Salon:
-    def __init__(self, nom, membres=[]):
-        self.nom = nom
-        self.membres = membres  # Liste d'utilisateurs
-        self.historique_fulgurances = []
+# salon_organique.py - Le Cœur et la Structure
 
-    def get_poids_représentatif(self):
-        # La force du vote dépend de la taille du salon
-        n = len(self.membres)
-        return 0.5 if n < 5 else 1.0 if n < 20 else 1.5
+class MoteurQuintessence:
+    """La partie 'Cœur' : Gère la synergie et la synthèse humaine."""
+    
+    @staticmethod
+    def traiter_fulgurance(question, ia_selectionnees):
+        if not ia_selectionnees:
+            return "Veuillez sélectionner au moins une intelligence artificielle pour la synthèse."
+        
+        # Logique de synthèse (Quintessenciation)
+        # On simule ici la fusion des regards IA
+        sources = ", ".join(ia_selectionnees)
+        return (f"Synthèse organique de la fulgurance : '{question}'. "
+                f"Traitée par la synergie de : {sources}. "
+                "L'information est ici filtrée et reformulée pour conserver une 'présence' humaine.")
 
-    def processus_admission(self, candidat, question):
-        print(f"\n--- Admission au Salon {self.nom} ---")
-        # 3 tours pour valider l'équilibre (Science, Art, Santé, Politique, IDH)
-        for tour in range(1, 4):
-            print(f"Tour {tour} : Vote facultatif des membres...")
-            
-            # Ici, la logique du vote constructif (5 critères)
-            resultat_vote = self.simuler_vote_constructif(question)
-            
-            if resultat_vote["equilibre"] > 0.8:
-                self.membres.append(candidat)
-                return "ADMIS : Votre pensée équilibre le salon."
-            
-            if tour == 3:
-                return "REFUSÉ : L'équilibre n'est pas atteint."
-        return "REFUSÉ."
-def simuler_vote_constructif(self, question):
-        # Analyse de la répartition sur les 5 piliers
-        # Le résultat fait avancer la problématique du salon
-        return {"equilibre": 0.85, "feedback": "Renforce le pôle Santé/Éthique"}
+class GouvernanceSalon:
+    """La partie 'Structure' : Gère la spatialité, la temporalité et le vote."""
+    
+    @staticmethod
+    def lister_salons(question):
+        # Décorrélation par mots-clés et contexte
+        # Imagine ici une logique qui croise question + métadonnées
+        return [
+            {"id": 1, "nom": "Bio-Politique", "geo": "Nantes", "temps": "Contemporain", "membres": 12},
+            {"id": 2, "nom": "Environnement", "geo": "Global", "temps": "Futur", "membres": 5},
+            {"id": 3, "nom": "Patrimoine", "geo": "Local", "temps": "Ancienne Époque", "membres": 8}
+        ]
+
+    @staticmethod
+    def verifier_vote_admission(candidat_id, salon_id):
+        # Protocole de vote en 3 tours
+        return "Système de vote immunitaire (3 tours) activé."
+
+# Fonction d'interface pour app.py
+def obtenir_reponse_salon(question, ia_list):
+    moteur = MoteurQuintessence()
+    gouvernance = GouvernanceSalon()
+    
+    synthese = moteur.traiter_fulgurance(question, ia_list)
+    salons = gouvernance.lister_salons(question)
+    
+    return synthese, salons
