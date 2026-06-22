@@ -1,14 +1,16 @@
 # SALON SOURCE
 
-## Philosophie du Projet
-Ce Salon est le socle d'une **Mondialisation Organique du Savoir-Faire**. 
+## Origine et Esprit
+Tout commence par un Salon de discussion. Avant d'être une architecture numérique ou un modèle mathématique, ce projet est un espace de parole, un lieu où les idées prennent forme dans l'échange. C'est ici, dans cette rencontre initiale, que le savoir émerge et que la réflexion se construit.
 
-Il repose sur une distinction fondamentale entre :
-* **Le Numérique** : Le moteur, le code, l'infrastructure de traitement.
-* **La Présence** : L'incarnation, le vivant, le lien entre l'organe et l'environnement.
+## Présentation
+Le Salon Source est un espace de recherche dédié à l'analyse des interactions entre le vivant et son environnement. Ce projet propose une méthode alternative de minage et de ménage de l'information pour structurer le savoir issu de nos réflexions.
 
-### L'intention
-Dans un monde où le show-business et les structures accélèrent la rupture du patrimoine biologique, ce projet se veut un acte de résistance : un travail de sauvetage continu. L'objectif est de relier la compréhension des conséquences des maladies à une réflexion sur notre système politique, en utilisant la métaphore du "spider-world" pour structurer nos interactions.
+## Principes directeurs
+* **Minage alternatif par l'intelligence collaborative** : Notre méthode repose sur l'exploitation croisée de différentes intelligences artificielles. Par l'association et la confrontation de ces sources, nous parvenons à distiller le flux d'informations brut pour en extraire l'essence et nous rapprocher d'une donnée réelle, consolidée.
+* **Ménage de l'information** : Travail de tri et d'organisation des données pour isoler les dynamiques de "nucléarisation entre organe et environnement".
+* **Approche systémique** : Utilisation du modèle mathématique du "spider-world" pour cartographier les interactions complexes au sein des systèmes biologiques.
+* **Analyse politique** : Étude des conséquences des pathologies sur le corps social, liant l'intégrité biologique à la structure des systèmes politiques.
 
----
-*Ce projet est un espace de recherche continue, une forme de poésie où chaque ligne de code est une preuve.*
+## Mission et Finalité
+Le Salon agit comme une interface de travail visant à agencer les éléments de compréhension que nous produisons. Notre finalité est de contribuer activement à l'apport d'une information consolidée et alternative, transformant des analyses éphémères en une architecture de savoir durable et accessible.
